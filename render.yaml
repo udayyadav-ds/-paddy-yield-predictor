@@ -2,21 +2,6 @@ services:
   - type: web
     name: paddy-yield-predictor
     runtime: python
+    pythonVersion: "3.11.9"
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.11.9
-```
-
----
-
-## 🗺️ Step by Step Fix:
-```
-1. Add runtime.txt → python-3.11.9
-       ↓
-2. Update requirements.txt (remove pandas==2.2.2)
-       ↓
-3. Push to GitHub
-       ↓
-4. Render will auto-redeploy ✅
+    startCommand: uvicorn app:app --host 0.0.0.0 --port 10000
