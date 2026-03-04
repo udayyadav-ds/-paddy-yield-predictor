@@ -1,7 +1,6 @@
 fastapi
 uvicorn
-gunicorn        ← ADD THIS LINE
+gunicorn
 pandas==2.2.3
 numpy
 scikit-learn
-```
