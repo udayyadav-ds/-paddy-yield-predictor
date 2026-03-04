@@ -1,6 +1,5 @@
 fastapi
 uvicorn
-pandas==2.2.2
+pandas==2.2.3
 numpy
 scikit-learn
-joblib
